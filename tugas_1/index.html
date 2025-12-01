@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanaga Hill Majalengka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#0f172a",
+              accent: "#facc15",
+              chill: "#a3e635",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+      .glass {
+        backdrop-filter: blur(16px);
+        background: rgba(15, 23, 42, 0.4);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-brand">
+    <header class="fixed top-0 z-40 w-full bg-white/70 shadow-sm backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="h-10 w-10 rounded-full bg-gradient-to-br from-chill to-sky-300"
+          ></div>
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+            >
+              Wisata Alam
+            </p>
+            <h1 class="text-xl font-bold text-brand">Kanaga Hill</h1>
+          </div>
+        </div>
+        <nav
+          class="hidden items-center gap-6 text-sm font-medium text-slate-600 lg:flex"
+        >
+          <a href="#beranda" class="hover:text-brand">Beranda</a>
+          <a href="#about" class="hover:text-brand">About</a>
+          <a href="#obyek" class="hover:text-brand">Obyek Wisata</a>
+          <a href="#fasilitas" class="hover:text-brand">Fasilitas Wisata</a>
+          <a href="#paket" class="hover:text-brand">Paket Wisata</a>
+          <a href="#museum" class="hover:text-brand">Museum Salak</a>
+          <a href="#pemesanan" class="hover:text-brand">Pemesanan</a>
+          <a href="#galery" class="hover:text-brand">Galery</a>
+        </nav>
+        <a
+          href="#pemesanan"
+          class="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-900"
+          >Rencanakan Trip</a
+        >
+      </div>
+    </header>
+
+    <main class="pt-28">
+      <section
+        id="beranda"
+        class="relative mx-auto mb-16 max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-br from-brand via-slate-900 to-slate-800 px-6 py-16 text-white shadow-2xl lg:px-16"
+      >
+        <div class="absolute inset-0 opacity-30">
+          <div
+            class="absolute -left-10 top-10 h-32 w-32 rounded-full bg-gradient-to-tr from-chill to-emerald-300 blur-3xl"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-gradient-to-tr from-accent to-orange-400 blur-3xl"
+          ></div>
+        </div>
+        <div class="relative grid items-center gap-12 lg:grid-cols-2">
+          <div class="space-y-6">
+            <p
+              class="inline-flex rounded-full bg-white/10 px-4 py-1 text-xs uppercase tracking-[0.4em]"
+            >
+              Eksplor Majalengka
+            </p>
+            <h2 class="text-4xl font-semibold leading-snug lg:text-5xl">
+              Kanaga Hill Majalengka, Cara Baru Menyapa Negeri di Atas Awan
+            </h2>
+            <p class="text-base text-slate-200">
+              Rasakan paket petualangan sunrise, camping glam, dan trekking
+              hutan salak di bukit paling instagramable di Majalengka. Tim lokal
+              siap memandu pengalaman penuh budaya dan petualangan.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#paket"
+                class="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-brand transition hover:bg-yellow-400"
+                >Lihat Paket Wisata</a
+              >
+              <a
+                href="#video"
+                class="rounded-full border border-white/40 px-5 py-2 text-sm font-semibold text-white"
+                >Tonton Video</a
+              >
+            </div>
+            <div class="flex flex-wrap gap-8 pt-4 text-sm">
+              <div>
+                <p class="text-3xl font-semibold">+120</p>
+                <p class="text-slate-300">Kegiatan Outdoor</p>
+              </div>
+              <div>
+                <p class="text-3xl font-semibold">98%</p>
+                <p class="text-slate-300">Tingkat Kepuasan</p>
+              </div>
+              <div>
+                <p class="text-3xl font-semibold">24/7</p>
+                <p class="text-slate-300">Pendamping Lokal</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid gap-4 md:grid-cols-2">
+            <img
+              src="./Bukit-kanaga-hill-1.jpg"
+              alt="Sunrise Kanaga Hill"
+              class="h-48 w-full rounded-2xl object-cover shadow-lg ring-2 ring-white/20 md:h-full"
+            />
+            <div class="grid gap-4">
+              <img
+                src="./Bukit-kanaga-hill-2.jpg"
+                alt="Camping Kanaga Hill"
+                class="h-36 w-full rounded-2xl object-cover shadow-lg ring-2 ring-white/20"
+              />
+              <img
+                src="./04838a62-d6ef-4756-994a-d8122cb66f68-99749022.webp"
+                alt="Spot Foto Kanaga Hill"
+                class="h-36 w-full rounded-2xl object-cover shadow-lg ring-2 ring-white/20"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div
+          class="grid gap-8 rounded-3xl bg-white p-8 shadow-xl lg:grid-cols-2"
+        >
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.5em] text-slate-400"
+            >
+              About
+            </p>
+            <h3 class="mb-4 text-3xl font-semibold">
+              Desa Wisata Kanaga Hill Majalengka
+            </h3>
+            <p class="text-slate-600">
+              Kanaga Hill menghadirkan perpaduan wisata alam, budaya, dan
+              kuliner khas Majalengka. Bukit ini berada di dataran tinggi dengan
+              lanskap perbukitan salak dan lembah hijau. Nikmati tur edukasi
+              perkebunan salak, trekking di jalur hutan, hingga workshop kriya
+              bersama warga lokal.
+            </p>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-100 p-6 shadow-sm">
+              <p class="text-4xl font-semibold text-chill">06.00</p>
+              <p class="font-semibold text-brand">Golden Sunrise</p>
+              <p class="text-sm text-slate-500">
+                Spot terbaik menyaksikan kabut tipis dari Bukit Kanaga.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-100 p-6 shadow-sm">
+              <p class="text-4xl font-semibold text-accent">∞</p>
+              <p class="font-semibold text-brand">Aktivitas Komunal</p>
+              <p class="text-sm text-slate-500">
+                Ngopi di awan, kelas batik, hingga musik akustik setiap akhir
+                pekan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="obyek" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.5em] text-slate-400"
+              >
+                Obyek Wisata
+              </p>
+              <h3 class="text-3xl font-semibold text-brand">
+                Highlight Destinasi
+              </h3>
+            </div>
+            <a
+              href="#pemesanan"
+              class="text-sm font-semibold text-brand underline"
+              >Request Itinerary</a
+            >
+          </div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <article class="rounded-3xl bg-white p-5 shadow-lg">
+              <h4 class="text-lg font-semibold text-brand">Sky Walk Kanaga</h4>
+              <p class="text-sm text-slate-600">
+                Jalur kayu dengan view 360° cocok untuk memotret sunrise atau
+                menikmati senja.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-5 shadow-lg">
+              <h4 class="text-lg font-semibold text-brand">Kanaga Glamp</h4>
+              <p class="text-sm text-slate-600">
+                Area glamping premium lengkap dengan breakfast lokal &amp; fire
+                pit malam.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-5 shadow-lg">
+              <h4 class="text-lg font-semibold text-brand">Ruang Budaya</h4>
+              <p class="text-sm text-slate-600">
+                Workshop topeng Majalengka, galeri foto, hingga cinderamata UMKM
+                desa.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="fasilitas" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div class="rounded-3xl bg-brand px-8 py-10 text-white shadow-2xl">
+          <div class="mb-8 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.5em] text-white/70"
+              >
+                Fasilitas Wisata
+              </p>
+              <h3 class="text-3xl font-semibold">
+                Fasilitas Kelas Resort di Tengah Alam
+              </h3>
+            </div>
+          </div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div class="rounded-2xl bg-white/10 p-6">
+              <p class="text-lg font-semibold">Kanaga Cafe</p>
+              <p class="text-sm text-white/70">
+                Menu signature kopi salak dan mocktail herbal.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white/10 p-6">
+              <p class="text-lg font-semibold">Ruang Ganti &amp; Shower</p>
+              <p class="text-sm text-white/70">
+                Area bersih dengan air panas hasil solar heating.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white/10 p-6">
+              <p class="text-lg font-semibold">Basecamp Outdoor</p>
+              <p class="text-sm text-white/70">
+                Gear lengkap, jalur evakuasi, dan briefing safety gratis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="paket" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.5em] text-slate-400"
+            >
+              Paket Wisata
+            </p>
+            <h3 class="text-3xl font-semibold text-brand">Daftar Paket Seru</h3>
+          </div>
+          <p class="text-sm text-slate-500">
+            Pilih paket favorit, atau hubungi kami untuk custom itinerary.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article
+            class="flex flex-col overflow-hidden rounded-3xl bg-white shadow-xl"
+          >
+            <img
+              src="./images.jpg"
+              alt="Paket Sunrise Kanaga Hill"
+              class="h-56 w-full object-cover"
+            />
+            <div class="flex flex-1 flex-col gap-3 p-6">
+              <div
+                class="flex items-center justify-between text-xs uppercase tracking-wide text-slate-500"
+              >
+                <span>Update 12 Jan 2025</span>
+                <span>Durasi 6 Jam</span>
+              </div>
+              <h4 class="text-2xl font-semibold text-brand">
+                Paket Sunrise Summit &amp; Museum Salak
+              </h4>
+              <p class="text-sm text-slate-600">
+                Trekking ringan + kelas kopi salak + tur mini ke Museum Salak
+                dengan storyteller lokal.
+              </p>
+              <div
+                class="mt-auto flex flex-wrap items-center justify-between gap-3"
+              >
+                <p class="text-lg font-semibold text-brand">
+                  Harga Promo mulai 650rb
+                </p>
+                <a
+                  href="#pemesanan"
+                  class="text-sm font-semibold text-brand underline"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="flex flex-col overflow-hidden rounded-3xl bg-white shadow-xl"
+          >
+            <img
+              src="./Gambar WhatsApp 2025-12-01 pukul 20.03.10_8b50b75a.jpg"
+              alt="Paket Camping Kanaga Hill"
+              class="h-56 w-full object-cover"
+            />
+            <div class="flex flex-1 flex-col gap-3 p-6">
+              <div
+                class="flex items-center justify-between text-xs uppercase tracking-wide text-slate-500"
+              >
+                <span>Update 20 Jan 2025</span>
+                <span>Durasi 2 Hari</span>
+              </div>
+              <h4 class="text-2xl font-semibold text-brand">
+                Paket Kanaga Glamping &amp; Ayung Rafting Ubud
+              </h4>
+              <p class="text-sm text-slate-600">
+                Gabungan camping mewah di Kanaga Hill dan rafting eksotis Ayung
+                River by partner travel Bali.
+              </p>
+              <div
+                class="mt-auto flex flex-wrap items-center justify-between gap-3"
+              >
+                <p class="text-lg font-semibold text-brand">
+                  Harga Promo mulai 1,35jt
+                </p>
+                <a
+                  href="#pemesanan"
+                  class="text-sm font-semibold text-brand underline"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="video" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div
+          class="grid gap-8 rounded-3xl bg-white p-8 shadow-xl lg:grid-cols-[1.2fr_0.8fr]"
+        >
+          <div class="space-y-4">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.5em] text-slate-400"
+            >
+              Video Promosi
+            </p>
+            <h3 class="text-3xl font-semibold text-brand">
+              Experience Kanaga Hill
+            </h3>
+            <p class="text-slate-600">
+              Video highlight aktivitas sunrise hike, hammock park, dan sesi
+              musik di Kanaga Hill yang direkam komunitas lokal. Klik play untuk
+              merasakan vibe-nya!
+            </p>
+            <div class="aspect-video overflow-hidden rounded-2xl shadow-2xl">
+              <iframe
+                class="h-full w-full"
+                src="https://www.youtube.com/embed/DIdxxO6PJEk?si=G7X5L-sw6h0uoXZE"
+                title="Kanaga Hill Majalengka"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h4 class="text-xl font-semibold text-brand">
+              Kenapa Harus Kanaga Hill?
+            </h4>
+            <ul class="mt-4 space-y-3 text-sm text-slate-600">
+              <li>✅ Kurasi paket oleh warga desa</li>
+              <li>✅ Shuttle bandara/stasiun tersedia</li>
+              <li>✅ Konsultan event outdoor (gathering, wedding)</li>
+              <li>✅ Certified local ranger &amp; paramedic</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="museum" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div class="rounded-3xl bg-white px-8 py-10 shadow-xl">
+          <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.5em] text-slate-400"
+              >
+                Museum Salak
+              </p>
+              <h3 class="text-3xl font-semibold text-brand">
+                Museum Salak Kanaga
+              </h3>
+            </div>
+            <p class="text-sm text-slate-500">
+              Buka setiap hari 08.00 - 17.00 WIB
+            </p>
+          </div>
+          <div class="grid gap-8 md:grid-cols-2">
+            <p class="text-slate-600">
+              Museum Salak Kanaga memamerkan perjalanan budi daya salak varietas
+              lokal, koleksi alat tradisional, dan residensi seniman. Pengunjung
+              bisa mengikuti sesi DIY membuat keripik salak dan mencicipi
+              mocktail salak sparkling.
+            </p>
+            <div class="rounded-2xl bg-slate-100 p-6 text-sm text-slate-500">
+              <p class="font-semibold text-brand">Highlight Museum</p>
+              <ul class="mt-4 space-y-2">
+                <li>• Instalasi aroma dan soundscape kebun salak.</li>
+                <li>• Pameran foto petani salak generasi muda.</li>
+                <li>• Store produk turunan salak dari UMKM desa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pemesanan" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div
+          class="grid gap-10 rounded-3xl bg-brand px-8 py-10 text-white shadow-2xl lg:grid-cols-2"
+        >
+          <div class="space-y-4">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.5em] text-white/70"
+            >
+              Pemesanan
+            </p>
+            <h3 class="text-3xl font-semibold">
+              Rencanakan Jadwal dengan Travel Curator Kami
+            </h3>
+            <p class="text-white/80">
+              Lengkapi formulir singkat ini, tim kami akan mengirim itinerary
+              personal, termasuk opsi transportasi dan rekomendasi waktu terbaik
+              berkunjung.
+            </p>
+          </div>
+          <form class="space-y-4">
+            <div class="grid gap-4 md:grid-cols-2">
+              <label class="text-sm">
+                Nama Lengkap
+                <input
+                  type="text"
+                  placeholder="Nama Anda"
+                  class="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none"
+                />
+              </label>
+              <label class="text-sm">
+                Email / WhatsApp
+                <input
+                  type="text"
+                  placeholder="+62 ..."
+                  class="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none"
+                />
+              </label>
+            </div>
+            <label class="text-sm block">
+              Paket Pilihan
+              <select
+                class="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white focus:border-white focus:outline-none"
+              >
+                <option class="text-brand">Paket Sunrise Summit</option>
+                <option class="text-brand">Paket Kanaga Glamping</option>
+                <option class="text-brand">Custom Event Outdoor</option>
+              </select>
+            </label>
+            <label class="text-sm block">
+              Catatan Tambahan
+              <textarea
+                rows="3"
+                class="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none"
+                placeholder="Kapan berkunjung? Jumlah peserta?"
+              ></textarea>
+            </label>
+            <button
+              type="button"
+              class="w-full rounded-2xl bg-accent px-6 py-3 text-sm font-semibold text-brand transition hover:bg-yellow-400"
+            >
+              Kirim Permintaan Jadwal
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section id="galery" class="mx-auto mb-16 max-w-6xl px-6 lg:px-0">
+        <div class="mb-6">
+          <p
+            class="text-xs font-semibold uppercase tracking-[0.5em] text-slate-400"
+          >
+            Galery
+          </p>
+          <h3 class="text-3xl font-semibold text-brand">
+            Momen Favorit Traveler
+          </h3>
+        </div>
+        <div class="grid gap-4 md:grid-cols-4">
+          <img
+            src="./Gambar WhatsApp 2025-12-01 pukul 20.03.11_22f64daa.jpg"
+            alt="Galeri Kanaga Hill"
+            class="h-48 w-full rounded-2xl object-cover"
+          />
+          <img
+            src="./Bukit-kanaga-hill-1.jpg"
+            alt="Galeri Kanaga Hill"
+            class="h-48 w-full rounded-2xl object-cover"
+          />
+          <img
+            src="./Bukit-kanaga-hill-2.jpg"
+            alt="Galeri Kanaga Hill"
+            class="h-48 w-full rounded-2xl object-cover"
+          />
+          <div
+            class="flex h-48 flex-col justify-between rounded-2xl bg-white p-4 text-sm text-slate-500 shadow"
+          >
+            <p>
+              “Kanaga Hill membuat gathering kantor kami terasa eksklusif, mulai
+              sunrise hingga malam api unggun.”
+            </p>
+            <p class="font-semibold text-brand">— Rafi, Bandung</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-6 text-sm text-slate-500"
+      >
+        <p>&copy; 2025 Kanaga Hill Majalengka. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#about" class="hover:text-brand">Tentang</a>
+          <a href="#pemesanan" class="hover:text-brand">Hubungi Kami</a>
+          <a href="#galery" class="hover:text-brand">Galeri</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
